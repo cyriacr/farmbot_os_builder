@@ -1,11 +1,15 @@
 #!/bin/bash
 
+# remove unwant files and packages before we start
 rm -rf ~/.asdf
 rm -rf farmbot
 
 sudo apt-get autoremove -y
+sudo apt-get remove elixir -y
+sudo apt-get remove erlang -y
 
-sudo apt-get install git -y
+# install necessary tools
+sudo apt-get install git curl -y
 
 # install nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
