@@ -45,6 +45,7 @@ mkdir farmbot; cd farmbot
 git clone https://github.com/FarmBot/farmbot_os.git os
 cd os
 npm install
+npm run build
 
 # build image
 export MIX_ENV=prod
