@@ -47,10 +47,3 @@ cd os
 npm install
 npm run build
 
-# build image
-export MIX_ENV=prod
-export MIX_TARGET=rpi3
-source ~/.bash_profile
-sudo rm /tmp/apt-* -f
-mix deps.get
-mix firmware
